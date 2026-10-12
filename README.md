@@ -161,6 +161,12 @@ Select pairs to show annotators for human evaluation:
 python sample_stratified_binary.py <POS1> <POS2> <POS3> --low-cos-csv ../data/extracted/{pos}_pairs_thr0.0_0.85_both_binsz0.1_n10000.csv
 ```
 
+Create stratified JSONL files with attached sentence evidence from licensed raw sources:
+
+```bash
+python sample_stratified.py <POS1> <POS2> <POS3>
+```
+
 Create a Qualtrics survey from sampled JSONL:
 
 ```bash
@@ -171,6 +177,12 @@ Export one survey:
 
 ```bash
 python qualtrics_export_survey.py <survey_id>
+```
+
+Export surveys in batch by parsing survey ids from logs:
+
+```bash
+python export_surveys_from_logs.py
 ```
 
 Aggregate survey results and compare against Qwen labels:
@@ -234,6 +246,8 @@ Downstream analysis scripts:
 ```bash
 python compute_stats.py
 python analyze_stability.py
+python analysis_morphology.py
+python analysis_polysemy.py
 ```
 
 ## Quick verification checklist

@@ -6,6 +6,12 @@ src/qualtrics_config.json
 .env
 .env.*
 
+# Local-only scripts (kept for other project work)
+src/analysis_synsets.py
+src/evaluate_synsets.py
+src/form_synsets.py
+src/visualize_synsets.py
+
 # Runtime logs and artifacts
 src/logs/
 *.log
