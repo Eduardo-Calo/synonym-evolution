@@ -1,0 +1,24 @@
+# Private and licensed data
+data/
+
+# Secrets and local config
+src/qualtrics_config.json
+.env
+.env.*
+
+# Runtime logs and artifacts
+src/logs/
+*.log
+*.out
+*.err
+
+# Python and virtual environments
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+
+# OS/editor artifacts
+.DS_Store
+.vscode/

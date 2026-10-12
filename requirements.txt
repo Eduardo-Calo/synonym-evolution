@@ -1,0 +1,16 @@
+numpy
+pandas
+polars
+torch
+sentence-transformers
+nltk
+tqdm
+requests
+matplotlib
+scipy
+statsmodels
+networkx
+plotly
+dash
+scikit-learn
+transformers
